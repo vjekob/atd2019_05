@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./Counter.module.css";
-import { connectToCounter } from "./redux/store";
+import { connectToCounter } from "./redux/counter.state";
 
 class CounterDisconnected extends Component {
     render() {
