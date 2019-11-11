@@ -1,0 +1,44 @@
+.control {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3em;
+}
+
+.todo {
+    font-size: 1.25em;
+}
+
+.input input, .input button {
+    font-size: 1.25em;
+}
+
+.input input {
+    margin-right: 0.5em;
+}
+
+.todos {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.todo button {
+    background-color: tomato;
+    color: white;
+    font-size: 0.5em;
+    border: 0px;
+    height: 16px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.completed {
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+.summary {
+    border-top: 1px solid #bbb;
+    margin-top: 1em;
+}
