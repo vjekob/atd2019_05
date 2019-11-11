@@ -1,16 +1,13 @@
 import { TODO_ACTIONS } from "./todo.actions";
+import { createReducer } from "./store";
 
-export const todo = (state = [], action) => {
-    switch (action.type) {
-        case TODO_ACTIONS.ADD:
-            return [...state, action.todo];
-        case TODO_ACTIONS.REMOVE:
-            return state.filter(todo => todo.id !== action.todo.id);
-        case TODO_ACTIONS.TOGGLE:
-            return state.map(todo => todo.id === action.todo.id
-                ? { ...todo, completed: !todo.completed }
-                : todo);
-        default:
-            return state;
-    }
-};
+export const todo = createReducer([], {
+    [TODO_ACTIONS.ADD]: (state, payload) => [...state, payload],
+
+    [TODO_ACTIONS.REMOVE]: (state, payload) => state.filter(todo => todo.id !== payload.id),
+
+    [TODO_ACTIONS.TOGGLE]: (state, payload) =>
+        state.map(todo => todo.id === payload.id
+            ? { ...todo, completed: !todo.completed }
+            : todo)
+});

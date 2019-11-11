@@ -8,9 +8,9 @@ export const TODO_ACTIONS = {
 
 let nextId = 0;
 
-const add = todo => ({ type: TODO_ACTIONS.ADD, todo: { ...todo, completed: false, id: ++nextId } });
-const remove = todo => ({ type: TODO_ACTIONS.REMOVE, todo });
-const toggle = todo => ({ type: TODO_ACTIONS.TOGGLE, todo });
+const add = todo => ({ type: TODO_ACTIONS.ADD, payload: { ...todo, completed: false, id: ++nextId } });
+const remove = todo => ({ type: TODO_ACTIONS.REMOVE, payload: todo });
+const toggle = todo => ({ type: TODO_ACTIONS.TOGGLE, payload: todo });
 
 export const mapDispatchToTodoProps = dispatch => bindActionCreators(
     {
