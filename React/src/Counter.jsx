@@ -9,17 +9,13 @@ export class Counter extends Component {
         };
     }
 
-    componentDidMount() {
-        setInterval(() => this.setState({}), 5000);
-    }
-
     render() {
         return (
             <div className={styles.control}>
                 <div className={styles.counter}>{this.state.counter}</div>
                 <div className={styles.buttons}>
-                    <div onClick={() => this.state.counter++}>+</div>
-                    <div onClick={() => this.state.counter--}>-</div>
+                    <div onClick={() => this.setState({ counter: this.state.counter + 1 })}>+</div>
+                    <div onClick={() => this.setState({ counter: this.state.counter - 1 })}>-</div>
                 </div>
             </div>
         )
