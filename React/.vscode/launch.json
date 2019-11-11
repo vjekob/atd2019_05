@@ -7,19 +7,10 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Chrome (BC)",
-            "url": "https://demos.vjeko.com/BC150/?page=50100",
-            "webRoot": "${workspaceFolder}",
-            "sourceMaps": true
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
             "name": "Chrome (React)",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}",
             "sourceMaps": true
-        },
-
+        }
     ]
 }
