@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import { hot } from "react-hot-loader";
+import { Provider } from "react-redux";
 import "./App.css";
-import { View } from "./components/view/View";
 import { Counter } from "./Counter";
+import { store } from "./redux/store";
 
 class App extends Component {
   render() {
     return (
-      // <View />
-      <Counter/>
+      <Provider store={store}>
+        <Counter />
+      </Provider>
     );
   }
 }
 
-export default hot(module)(App);
+export default App;
