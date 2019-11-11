@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./TodoList.module.css";
-import { connectToTodo } from "./redux/todo.state";
+import { connectToTodo } from "../redux/todo.state";
 import { TodoEntry } from "./TodoEntry";
 
 class TodoListDisconnected extends Component {

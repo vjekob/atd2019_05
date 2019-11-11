@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { connectToTodoTotal } from "./redux/todo.state";
+import { connectToTodoTotal } from "../redux/todo.state";
 
 class TodoSummaryTotalDisconnected extends Component {
     render() {

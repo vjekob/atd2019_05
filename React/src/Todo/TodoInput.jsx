@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./TodoInput.module.css";
-import { connectToTodoAdd } from "./redux/todo.state";
+import { connectToTodoAdd } from "../redux/todo.state";
 
 class TodoInputDisconnected extends Component {
     constructor(props) {
