@@ -9,10 +9,12 @@ export class Counter extends Component {
         };
     }
 
-    _increase(add) {
-        if (add === 0)
-            return;
-        this.setState({ counter: this.state.counter + add});
+    _increase() {
+        this.setState({ counter: this.state.counter + 1 });
+    }
+
+    _decrease() {
+        this.setState({ counter: this.state.counter - 1 });
     }
 
     render() {
@@ -20,8 +22,8 @@ export class Counter extends Component {
             <div className={styles.control}>
                 <div className={styles.counter}>{this.state.counter}</div>
                 <div className={styles.buttons}>
-                    <div onClick={() => this._increase(1)}>+</div>
-                    <div onClick={() => this._increase(-1)}>-</div>
+                    <div onClick={() => this._increase()}>+</div>
+                    <div onClick={() => this._decrease()}>-</div>
                 </div>
             </div>
         )
