@@ -7,11 +7,9 @@ export const todo = (state = [], action) => {
         case TODO_ACTIONS.REMOVE:
             return state.filter(todo => todo.id !== action.todo.id);
         case TODO_ACTIONS.TOGGLE:
-            const newState = [...state];
-            const todo = newState.find(todo => todo.id === action.todo.id);
-            if (todo)
-                todo.completed = !todo.completed;
-            return newState;
+            return state.map(todo => todo.id === action.todo.id
+                ? { ...todo, completed: !todo.completed }
+                : todo);
         default:
             return state;
     }

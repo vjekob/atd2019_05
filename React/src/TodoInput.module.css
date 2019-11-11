@@ -1,0 +1,7 @@
+.input input, .input button {
+    font-size: 1.25em;
+}
+
+.input input {
+    margin-right: 0.5em;
+}

@@ -20,3 +20,5 @@ export const mapDispatchToTodoProps = dispatch => bindActionCreators(
     },
     dispatch
 );
+
+export const mapDispatchToTodoAdd = dispatch => bindActionCreators({ add }, dispatch);

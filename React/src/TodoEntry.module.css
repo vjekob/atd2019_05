@@ -1,0 +1,18 @@
+.todo {
+    padding: 4px;
+}
+
+.todo button {
+    background-color: tomato;
+    color: white;
+    font-size: 0.66em;
+    border: 0px;
+    height: 16px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.completed {
+    color: #bbb;
+    text-decoration: line-through;
+}
