@@ -5,7 +5,6 @@ import { TodoSummaryTotal } from "./TodoSummaryTotal";
 
 export class TodoSummary extends Component {
     render() {
-        console.log("Render => TodoSummary")
         return (
             <div className={styles.summary}>
                 Done <TodoSummaryDone /> of <TodoSummaryTotal />

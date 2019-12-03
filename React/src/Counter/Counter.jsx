@@ -5,7 +5,6 @@ import { CounterButtons } from "./CounterButtons";
 
 export class Counter extends Component {
     render() {
-        console.log("Render => Counter")
         return (
             <div className={styles.control}>
                 <div className={styles.counter}><CounterLabel /></div>

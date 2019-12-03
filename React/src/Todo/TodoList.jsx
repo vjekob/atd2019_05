@@ -5,7 +5,6 @@ import { TodoEntry } from "./TodoEntry";
 
 class TodoListDisconnected extends Component {
     render() {
-        console.log("Render => TodoList")
         return (
             <div className={styles.todos}>
                 {

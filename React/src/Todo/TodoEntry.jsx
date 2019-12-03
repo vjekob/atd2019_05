@@ -4,7 +4,6 @@ import { connectToTodoEntry } from "../redux/todo.state";
 
 class TodoEntryDisconnected extends Component {
     render() {
-        console.log(`Render => TodoEntry ${this.props.id}`)
         return (
             <div className={styles.todo}>
                 <button onClick={() => this.props.remove(this.props.todo)}>remove</button>

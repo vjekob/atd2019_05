@@ -6,7 +6,6 @@ import { TodoSummary } from "./TodoSummary";
 
 export class TodoControl extends Component {
     render() {
-        console.log("Render => Todo")
         return (
             <div className={styles.control}>
                 <TodoInput />

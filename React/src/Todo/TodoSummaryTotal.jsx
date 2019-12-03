@@ -3,7 +3,6 @@ import { connectToTodoTotal } from "../redux/todo.state";
 
 class TodoSummaryTotalDisconnected extends Component {
     render() {
-        console.log("Render => TodoSummaryTotal");
         return this.props.total;
     }
 }

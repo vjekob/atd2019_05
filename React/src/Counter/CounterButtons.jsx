@@ -4,7 +4,6 @@ import { connectToCounterActions } from "../redux/counter.state";
 
 class CounterButtonsDisconnected extends Component {
     render() {
-        console.log("Render => CounterButtons")
         return (
             <div className={styles.buttons}>
                 <div onClick={() => this.props.increase()}>+</div>
