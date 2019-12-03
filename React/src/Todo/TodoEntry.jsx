@@ -19,7 +19,8 @@ class TodoEntryDisconnected extends Component {
         }
         finally {
             const now2 = window.performance.now();
-            console.log(`Rendering took ${now2 - now} ms`);
+            const mics = (now2 - now) * 1000;
+            console.log(`Rendering took: ${mics} μs`);
         }
     }
 }
