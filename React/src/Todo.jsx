@@ -19,7 +19,6 @@ class TodoDisconnected extends Component {
     }
 
     render() {
-        console.log("Render => Todo")
         return (
             <div className={styles.control}>
                 <div className={styles.input}>

@@ -4,7 +4,6 @@ import { connectToCounter } from "./redux/counter.state";
 
 class CounterDisconnected extends Component {
     render() {
-        console.log("Render => Counter");
         return (
             <div className={styles.control}>
                 <div className={styles.counter}>{this.props.counter}</div>
