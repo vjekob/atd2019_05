@@ -23,7 +23,3 @@
     cursor: default;
     user-select: none;
 }
-
-.buttons > div:active {
-    transform: scale(0.95);
-}
