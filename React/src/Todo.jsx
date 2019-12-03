@@ -19,9 +19,9 @@ class TodoDisconnected extends Component {
     }
 
     render() {
+        console.log("Render => Todo");
         const now = window.performance.now();
         try {
-            console.log("Render => Todo");
             return (
                 <div className={styles.control}>
                     <div className={styles.input}>
@@ -51,7 +51,8 @@ class TodoDisconnected extends Component {
         }
         finally {
             const now2 = window.performance.now();
-            console.log(`Rendering took: ${now2 - now} ms`);
+            const mics = (now2 - now) * 1000;
+            console.log(`Rendering took: ${mics} μs`);
         }
     }
 }
