@@ -20,13 +20,8 @@
     width: 1.5em;
     text-align: center;
     border-radius: 0.25em;
-    transition: all 50ms ease-out;
     cursor: default;
     user-select: none;
-}
-
-.buttons > div:hover {
-    background-color: #1d5b85;
 }
 
 .buttons > div:active {
