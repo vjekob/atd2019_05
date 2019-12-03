@@ -7,7 +7,7 @@
     "url": "https://www.github.com/vjekob"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode production",
     "build": "webpack --mode development",
     "prod": "webpack --mode production",
     "test": "test"
