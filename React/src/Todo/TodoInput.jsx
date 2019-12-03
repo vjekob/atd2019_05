@@ -19,14 +19,21 @@ class TodoInputDisconnected extends Component {
     }
 
     render() {
-        console.log("Render => TodoInput")
-        return (
+        console.log("Render => TodoInput");
+        const now = window.performance.now();
+        try {
+            return (
 
-            <div className={styles.input}>
-                <input ref={this._input} type="text" name="todo" placeholder="Add todo"></input>
-                <button onClick={() => this._add()}>Add</button>
-            </div>
-        );
+                <div className={styles.input}>
+                    <input ref={this._input} type="text" name="todo" placeholder="Add todo"></input>
+                    <button onClick={() => this._add()}>Add</button>
+                </div>
+            );
+        }
+        finally {
+            const now2 = window.performance.now();
+            console.log(`Rendering took ${now2 - now} ms`);
+        }
     }
 }
 
