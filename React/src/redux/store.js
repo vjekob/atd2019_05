@@ -4,9 +4,9 @@ import { todo } from "./todo.reducer";
 
 export function createReducer(initialState, handlers) {
     return (state = initialState, action) => {
-        const { type, payload, ...middleware } = action;
-        return typeof handlers[type] === "function"
-            ? handlers[type](state, payload, middleware)
+        const { type, payload } = action;
+        return handlers[type]
+            ? handlers[type](state, payload)
             : state;
     }
 };
@@ -15,6 +15,5 @@ export const store = createStore(
     combineReducers({
         counter,
         todo
-    }),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    })
 );
